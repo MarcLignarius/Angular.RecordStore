@@ -9,7 +9,8 @@ import { Album } from '../album.model';
   providers: [AlbumService]
 })
 export class AdminComponent implements OnInit {
-
+  showAddFormTrue = false;
+  showEditFormTrue = false;
   constructor(private albumService: AlbumService) { }
 
   ngOnInit() {
@@ -18,6 +19,22 @@ export class AdminComponent implements OnInit {
   submitForm(title: string, artist: string, description: string) {
     var newAlbum: Album = new Album(title, artist, description);
     this.albumService.addAlbum(newAlbum);
+  }
+
+  showAddForm() {
+    if(this.showAddFormTrue == true) {
+      this.showAddFormTrue = false;
+    } else {
+      this.showAddFormTrue = true;
+    }
+  }
+
+  showEditForm() {
+    if(this.showEditFormTrue == true) {
+      this.showEditFormTrue = false;
+    } else {
+      this.showEditFormTrue = true;
+    }
   }
 
 }

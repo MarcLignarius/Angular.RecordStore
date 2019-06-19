@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Album } from '../album.model';
 import { AlbumService } from '../album.service';
 import { FirebaseListObservable } from 'angularfire2/database';
 
@@ -22,4 +21,5 @@ export class MarketplaceComponent implements OnInit {
   goToDetailPage(clickedAlbum) {
     this.router.navigate(['albums', clickedAlbum.$key]);
   };
+
 }
