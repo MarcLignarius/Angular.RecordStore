@@ -1,4 +1,4 @@
-# MusicShop
+# Record Store
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 
@@ -21,6 +21,18 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 ## Running end-to-end tests
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+## Acquiring Firebase credentials
+
+Create or sign to your Firebase account at https://firebase.google.com/. Click on _Create a new project_ and select _Add Firebase to your web app_. Create a file called api-keys.ts in the src/app directory and place your Firebase credentials in that file.
+
+    export const masterFirebaseConfig = {  
+      apiKey: "xxxx",  
+      authDomain: "xxxx.firebaseapp.com",  
+      databaseURL: "https://xxxx.firebaseio.com",  
+      storageBucket: "xxxx.appspot.com",    
+      messagingSenderId: "xxxx"  
+    };
 
 ## Further help
 
