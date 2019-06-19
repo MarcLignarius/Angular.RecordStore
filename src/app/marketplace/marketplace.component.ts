@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { AlbumService } from '../album.service';
+import { ProductService } from '../product.service';
 import { FirebaseListObservable } from 'angularfire2/database';
 
 
@@ -8,18 +8,18 @@ import { FirebaseListObservable } from 'angularfire2/database';
   selector: 'app-marketplace',
   templateUrl: './marketplace.component.html',
   styleUrls: ['./marketplace.component.css'],
-  providers: [AlbumService]
+  providers: [ProductService]
 })
 
 export class MarketplaceComponent implements OnInit {
-  constructor(private router: Router, private albumService: AlbumService){}
-  albums: FirebaseListObservable<any[]>;
+  constructor(private router: Router, private productService: ProductService){}
+  products: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
   ngOnInit(){
-    this.albums = this.albumService.getAlbums();
+    this.products = this.productService.getProducts();
   }
-  goToDetailPage(clickedAlbum) {
-    this.router.navigate(['albums', clickedAlbum.$key]);
+  goToDetailPage(clickedProduct) {
+    this.router.navigate(['products', clickedProduct.$key]);
   };
 
 }

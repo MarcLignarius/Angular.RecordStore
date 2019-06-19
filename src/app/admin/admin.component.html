@@ -1,33 +1,40 @@
 <br>
-<button (click)="showAddForm()">Add Album</button>
-<button (click)="showEditForm()">Edit Albums</button>
+<button (click)="showAddForm()">Add Product</button>
+<button (click)="showEditForm()">Edit Products</button>
 <br>
 <br>
 <div *ngIf="showAddFormTrue" class="panel panel-default">
   <div class="panel-heading">
-    <h3 class="panel-title">Add New Album to Inventory</h3>
+    <h3 class="panel-title">Add New Product to Inventory</h3>
   </div>
   <div class="panel-body">
 
     <div>
-      <label>Album Title:</label>
+      <label>Product Title:</label>
       <br>
       <input #newTitle>
     </div>
 
     <div>
-      <label>Album Artist:</label>
+      <label>Product Artist:</label>
       <br>
       <input #newArtist>
     </div>
 
     <div>
-      <label>Album Description:</label>
+      <label>Product Description:</label>
       <br>
       <textarea #newDescription></textarea>
     </div>
+
+    <div>
+        <label>Product Category:</label>
+        <br>
+        <input #newCategory>
+      </div>
+    <br>
     <button
-      (click)="submitForm(newTitle.value, newArtist.value, newDescription.value); newTitle.value=''; newArtist.value=''; newDescription.value=''">Add</button>
+      (click)="submitForm(newTitle.value, newArtist.value, newDescription.value, newCategory.value); newTitle.value=''; newArtist.value=''; newDescription.value=''; newCategory.value=''">Add</button>
 
   </div>
 </div>

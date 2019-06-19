@@ -1,11 +1,14 @@
   <h2>Marketplace</h2>
-  <div *ngFor="let album of albums | async" class="panel panel-default">
+  <div *ngFor="let product of products | async | filters" class="panel panel-default">
     <div class="panel-body">
-      <h3 (click)="goToDetailPage(album)"><em>{{album.title}}</em> by {{album.artist}}</h3>
+      <h3 (click)="goToDetailPage(product)"><em>{{product.title}}</em> by {{product.artist}}</h3>
       <div *ngIf="currentRoute === '/admin'">
-        {{album.description}}
+        <p>{{product.description}}</p>
+        <p>{{product.category}}</p>
         <hr>
-        <app-edit-album [selectedAlbum]="album"></app-edit-album>
+        <app-edit-product [selectedProduct]="product"></app-edit-product>
       </div>
     </div>
   </div>
+
+  <!-- Continue here: https://www.learnhowtoprogram.com/javascript/angular/filtering-data-with-pipes (Filtering Based on Menu Criteria) -->

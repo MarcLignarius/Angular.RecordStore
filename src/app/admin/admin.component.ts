@@ -1,24 +1,24 @@
 import { Component, OnInit } from '@angular/core';
-import { AlbumService } from '../album.service';
-import { Album } from '../album.model';
+import { ProductService } from '../product.service';
+import { Product } from '../product.model';
 
 @Component({
   selector: 'app-admin',
   templateUrl: './admin.component.html',
   styleUrls: ['./admin.component.css'],
-  providers: [AlbumService]
+  providers: [ProductService]
 })
 export class AdminComponent implements OnInit {
   showAddFormTrue = false;
   showEditFormTrue = false;
-  constructor(private albumService: AlbumService) { }
+  constructor(private productService: ProductService) { }
 
   ngOnInit() {
   }
 
-  submitForm(title: string, artist: string, description: string) {
-    var newAlbum: Album = new Album(title, artist, description);
-    this.albumService.addAlbum(newAlbum);
+  submitForm(title: string, artist: string, description: string, category: string) {
+    var newProduct: Product = new Product(title, artist, description, category);
+    this.productService.addProduct(newProduct);
   }
 
   showAddForm() {
