@@ -1,7 +1,10 @@
 <h3>Your Cart</h3>
 <div class="cart-product" *ngFor="let product of products">
-  <span>{{ product.name }}</span>
-  <span>{{ product.price}}</span>
+  <h3><span>{{ product.artist }}</span></h3>
+  <h5><span>{{ product.title }}</span></h5>
+  <em><span>{{ product.description }}</span></em>
+  <p><span>{{ product.price}}</span></p>
+  <hr>
 </div>
 <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
   <div>

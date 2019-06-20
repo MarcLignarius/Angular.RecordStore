@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
+import { Product } from '../product.model';
 import { ProductService } from '../product.service';
 import { CartService } from '../cart.service';
 
@@ -24,13 +25,18 @@ export class ProductDetailComponent implements OnInit {
     private cartService: CartService
   ) { }
 
-  
-
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
       this.productId = (urlParameters['id']);
     });
-    this.productToDisplay = this.productService.getProductById(this.productId);
+    this.productService.getProductById(this.productId).subscribe(dataLastEmittedFromObserver => {
+      this.productToDisplay = new Product (
+        dataLastEmittedFromObserver.title,
+        dataLastEmittedFromObserver.artist,
+        dataLastEmittedFromObserver.description,
+        dataLastEmittedFromObserver.category,
+        dataLastEmittedFromObserver.price,
+      )
+    })
   }
-
 }
