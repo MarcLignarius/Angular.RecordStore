@@ -9,8 +9,10 @@
   <br>
   <div *ngFor="let product of products | async | filters:filterByCategory" class="panel panel-default">
     <div class="panel-body">
-      <h3 (click)="goToDetailPage(product)"><em>{{product.title}}</em> by {{product.artist}}</h3>
-      <!-- <img src="./../{{product.image}}" alt=""> -->
+      <img class="productImage" src="./../../assets/merch-images/{{product.image}}" alt="{{product.artist}} Merch">
+      <h3><em>{{product.title}}</em> by {{product.artist}}</h3>
+      <p class="category">{{product.category}}</p>
+      <button (click)="goToDetailPage(product)">More Info</button>
       <div *ngIf="currentRoute === '/admin'">
         <p>{{product.description}}</p>
         <p>{{product.category}}</p>

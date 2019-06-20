@@ -4,6 +4,7 @@ import { Location } from '@angular/common';
 import { Product } from '../product.model';
 import { ProductService } from '../product.service';
 import { CartService } from '../cart.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-product-detail',
@@ -22,7 +23,8 @@ export class ProductDetailComponent implements OnInit {
     private route: ActivatedRoute,
     private location: Location,
     private productService: ProductService,
-    private cartService: CartService
+    private cartService: CartService,
+    private router: Router
   ) { }
 
   ngOnInit() {
@@ -36,7 +38,13 @@ export class ProductDetailComponent implements OnInit {
         dataLastEmittedFromObserver.description,
         dataLastEmittedFromObserver.category,
         dataLastEmittedFromObserver.price,
+        dataLastEmittedFromObserver.image
       )
     })
   }
+
+  goBackToShop() {
+    this.router.navigate(['shop']);
+  }
+  
 }

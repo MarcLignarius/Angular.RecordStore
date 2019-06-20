@@ -18,6 +18,10 @@
 
 <label>New Price:</label>
 <input [(ngModel)]="selectedProduct.price"> 
+<br>
+
+<label>New Image:</label>
+<input [(ngModel)]="selectedProduct.image">
 <hr>
 <button (click)="beginUpdatingProduct(selectedProduct)">Update</button>
 <button (click)="beginDeletingProduct(selectedProduct)">Delete</button>

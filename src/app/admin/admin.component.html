@@ -32,14 +32,24 @@
       <br>
       <input #newCategory>
     </div>
+
     <div>
       <label>Product Price:</label>
       <br>
       <input #newPrice>
     </div>
+
+    <div>
+        <label>Product Image:</label>
+        <br>
+        <input #newImage>
+      </div>
+
+
+
     <br>
     <button
-      (click)="submitForm(newTitle.value, newArtist.value, newDescription.value, newCategory.value, newPrice.value); newTitle.value=''; newArtist.value=''; newDescription.value=''; newCategory.value=''; newPrice.value=''">Add</button>
+      (click)="submitForm(newTitle.value, newArtist.value, newDescription.value, newCategory.value, newPrice.value, newImage.value); newTitle.value=''; newArtist.value=''; newDescription.value=''; newCategory.value=''; newPrice.value=''; newImage.value=''">Add</button>
 
   </div>
 </div>

@@ -29,7 +29,8 @@ export class ProductService {
       artist: localUpdatedProduct.artist,
       description: localUpdatedProduct.description,
       category: localUpdatedProduct.category,
-      price: localUpdatedProduct.price
+      price: localUpdatedProduct.price,
+      image: localUpdatedProduct.image
     });
   }
 

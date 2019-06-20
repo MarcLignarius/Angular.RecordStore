@@ -1,7 +1,9 @@
 <div>
+  <img class="productImage" src="./../../assets/merch-images/{{productToDisplay.image}}" alt="{{productToDisplay.artist}} Merch">
   <h3>{{productToDisplay?.title}}</h3>
   <h4>{{productToDisplay?.artist}}</h4>
   <p>{{productToDisplay?.description}}</p>
   <p>${{productToDisplay?.price}}</p>
   <button (click)="addToCart(productToDisplay)">Add to Cart</button>
+  <button (click)="goBackToShop()">Back to Shop</button>
 </div>
