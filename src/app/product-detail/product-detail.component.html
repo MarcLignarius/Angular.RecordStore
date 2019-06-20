@@ -3,5 +3,5 @@
   <h4>{{(productToDisplay | async)?.artist}}</h4>
   <p>{{(productToDisplay | async)?.description}}</p>
   <p>${{(productToDisplay | async)?.price}}</p>
-  <button (click)="addToCart(product)">Add to Cart</button>
+  <button (click)="addToCart(productToDisplay)">Add to Cart</button>
 </div>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 import { CartService } from '../cart.service';
 
@@ -23,7 +23,7 @@ export class CartComponent {
   }
 
   onSubmit(customerData) {
-    console.warn('Your order has been submitted', customerData);
+    alert('Your order has been submitted');
     this.products = this.cartService.clearCart();
     this.checkoutForm.reset();
   }

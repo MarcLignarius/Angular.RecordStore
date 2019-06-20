@@ -1,6 +1,6 @@
 <h3>Your Cart</h3>
 <div class="cart-product" *ngFor="let product of products">
-  <span>{{ product.name }}</ span>
+  <span>{{ product.name }}</span>
   <span>{{ product.price}}</span>
 </div>
 <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
