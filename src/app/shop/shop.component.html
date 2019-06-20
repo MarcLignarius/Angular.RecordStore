@@ -13,6 +13,7 @@
       <div *ngIf="currentRoute === '/admin'">
         <p>{{product.description}}</p>
         <p>{{product.category}}</p>
+        <p>${{product.price}}</p>
         <hr>
         <app-edit-product [selectedProduct]="product"></app-edit-product>
       </div>

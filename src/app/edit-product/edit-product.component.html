@@ -1,20 +1,22 @@
 <h4>Edit Product</h4>
 
-<label>New Product Title:</label>
+<label>New Title:</label>
 <input [(ngModel)]="selectedProduct.title">
 <br>
 
-<label>New Product Artist:</label>
+<label>New Artist:</label>
 <input [(ngModel)]="selectedProduct.artist">
 <br>
 
-<label>New Product Description:</label>
+<label>New Description:</label>
 <input [(ngModel)]="selectedProduct.description">
+<br>
 
-<label>New Product Category:</label>
-<input [(ngModel)]="selectedProduct.category"> 
+<label>New Category:</label>
+<input [(ngModel)]="selectedProduct.category">
+<br> 
 
-<label>New Product Price:</label>
+<label>New Price:</label>
 <input [(ngModel)]="selectedProduct.price"> 
 <hr>
 <button (click)="beginUpdatingProduct(selectedProduct)">Update</button>
