@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
-
-import { Product } from '../product.model';
 import { ProductService } from '../product.service';
+import { CartService } from '../cart.service';
 
 @Component({
   selector: 'app-product-detail',
@@ -14,12 +13,18 @@ import { ProductService } from '../product.service';
 export class ProductDetailComponent implements OnInit {
   productId: string;
   productToDisplay;
+  addToCart(product) {
+    this.cartService.addToCart(product);
+  }
 
   constructor(
     private route: ActivatedRoute,
     private location: Location,
-    private productService: ProductService
+    private productService: ProductService,
+    private cartService: CartService
   ) { }
+
+  
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {

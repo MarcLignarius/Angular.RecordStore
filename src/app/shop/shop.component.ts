@@ -5,13 +5,13 @@ import { FirebaseListObservable } from 'angularfire2/database';
 
 
 @Component({
-  selector: 'app-marketplace',
-  templateUrl: './marketplace.component.html',
-  styleUrls: ['./marketplace.component.css'],
+  selector: 'app-shop',
+  templateUrl: './shop.component.html',
+  styleUrls: ['./shop.component.css'],
   providers: [ProductService]
 })
 
-export class MarketplaceComponent implements OnInit {
+export class ShopComponent implements OnInit {
   constructor(private router: Router, private productService: ProductService){}
   filterByCategory: string = "allProducts";
   products: FirebaseListObservable<any[]>;
