@@ -28,13 +28,18 @@
     </div>
 
     <div>
-        <label>Product Category:</label>
-        <br>
-        <input #newCategory>
-      </div>
+      <label>Product Category:</label>
+      <br>
+      <input #newCategory>
+    </div>
+    <div>
+      <label>Product Price:</label>
+      <br>
+      <input #newPrice>
+    </div>
     <br>
     <button
-      (click)="submitForm(newTitle.value, newArtist.value, newDescription.value, newCategory.value); newTitle.value=''; newArtist.value=''; newDescription.value=''; newCategory.value=''">Add</button>
+      (click)="submitForm(newTitle.value, newArtist.value, newDescription.value, newCategory.value, newPrice.value); newTitle.value=''; newArtist.value=''; newDescription.value=''; newCategory.value=''; newPrice.value=''">Add</button>
 
   </div>
 </div>

@@ -13,6 +13,9 @@
 
 <label>New Product Category:</label>
 <input [(ngModel)]="selectedProduct.category"> 
+
+<label>New Product Price:</label>
+<input [(ngModel)]="selectedProduct.price"> 
 <hr>
 <button (click)="beginUpdatingProduct(selectedProduct)">Update</button>
 <button (click)="beginDeletingProduct(selectedProduct)">Delete</button>

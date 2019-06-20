@@ -13,6 +13,7 @@ import { FirebaseListObservable } from 'angularfire2/database';
 
 export class MarketplaceComponent implements OnInit {
   constructor(private router: Router, private productService: ProductService){}
+  filterByCategory: string = "allProducts";
   products: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
   ngOnInit(){
@@ -20,6 +21,9 @@ export class MarketplaceComponent implements OnInit {
   }
   goToDetailPage(clickedProduct) {
     this.router.navigate(['products', clickedProduct.$key]);
-  };
+  }
+  onSelect(category) {
+    this.filterByCategory = category;
+  }
 
 }
