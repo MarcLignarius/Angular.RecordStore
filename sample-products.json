@@ -1,0 +1,112 @@
+{
+  "products": [
+    {
+      "title": "Californication",
+      "artist": "Red Hot Chili Peppers",
+      "description": "Californication is the seventh studio album by American rock band Red Hot Chili Peppers. It was released on June 8, 1999, on Warner Bros. Records and was produced by Rick Rubin. Californication marked the return of John Frusciante, who had previously appeared on Mother's Milk and Blood Sugar Sex Magik.",
+      "category": "Music",
+      "price": 9.99,
+      "id": "1",
+      "image": "redHotChiliPeppersCalifornication.jpeg"
+    },
+    {
+      "title": "Blood Sugar Sex Magik",
+      "artist": "Red Hot Chili Peppers",
+      "description": "Blood Sugar Sex Magik is the fifth studio album by American rock band Red Hot Chili Peppers, released on September 24, 1991 by Warner Bros. Records. Produced by Rick Rubin, its musical style differed notably from the techniques employed on the band's previous album Mother's Milk (1989), and featured minimal use of heavy metal guitar riffs. The album's subject matter incorporates sexual innuendos and references to drugs and death, as well as themes of lust and exuberance.",
+      "category": "Music",
+      "price": 7.99,
+      "id": "2",
+      "image": "redHotChiliPeppersBloodSugarSexMagik.jpg"
+    },
+    {
+      "title": "Bleach",
+      "artist": "Nirvana",
+      "description": "Bleach is the debut studio album by the American rock band Nirvana, released on June 15, 1989 by Sub Pop. The main recording sessions took place at Reciprocal Recording in Seattle, Washington between December 1988 and January 1989. Bleach failed to chart upon its original release, but was well received by critics. The album was re-released internationally by Geffen Records in 1992 following the success of Nirvana's second album, Nevermind (1991).",
+      "category": "Music",
+      "price": 7.99,
+      "id": "3",
+      "image": "nirvanaBleach.jpg"
+    },
+    {
+      "title": "In Utero",
+      "artist": "Nirvana",
+      "description": "In Utero is the third and final studio album by American rock band Nirvana, released on September 21, 1993, by DGC Records. Nirvana intended for the record to diverge significantly from the polished, refined production of its previous album, Nevermind (1991). To capture a more abrasive and natural sound, the group hired engineer Steve Albini to record In Utero during a two-week period in February 1993 at Pachyderm Studio in Cannon Falls, Minnesota. The music was quickly recorded within that time with few studio embellishments. The song lyrics and album packaging largely incorporated medical imagery that conveyed frontman Kurt Cobain's outlook on his publicized personal life and his band's newfound fame.",
+      "category": "Music",
+      "price": 9.99,
+      "id": "4",
+      "image": "nirvanaInUtero.jpg"
+    },
+    {
+      "title": "Toxicity",
+      "artist": "System Of A Down",
+      "description": "Toxicity is the second studio album by Armenian-American heavy metal band System of a Down, released on September 4, 2001 by American Recordings and Columbia Records. Featuring the heaviness and aggression of their 1998 eponymous debut, it features more melody, harmonies, and singing than the band's aforementioned album. Categorized primarily as alternative metal and nu metal, Toxicity features elements of multiple genres including folk, progressive rock, jazz, Armenian music, and Greek music, including prominent use of instruments such as the sitar, banjo, keyboards, and piano. It contains a wide array of political and non-political themes, such as mass incarceration, the CIA, the environment, group sex, drug addiction, and groupies.",
+      "category": "Music",
+      "price": 7.99,
+      "id": "5",
+      "image": "systemOfADownToxicity.jpg"
+    },
+    {
+      "title": "Dirt",
+      "artist": "Alice In Chains",
+      "description": "Dirt is the second studio album by the American rock band Alice in Chains, released on September 29, 1992, through Columbia Records. Peaking at No. 6 on the Billboard 200 chart, the album was also well received by music critics. It has since been certified four-times platinum by the RIAA and gone on to sell five million copies worldwide, making Dirt the band's highest selling album to date.[8] It is the band's last album recorded with all four original members, as bassist Mike Starr was fired from the band in January 1993.",
+      "category": "Music",
+      "price": 7.99,
+      "id": "6",
+      "image": "aliceInChainsDirt.jpg"
+    },
+    {
+      "title": "Tie-Dye Logo",
+      "artist": "Red Hot Chili Peppers",
+      "description": "Black T-shirt from Red Hot Chili Peppers with a large colorful tie-dye band logo design on front. 100% cottonWash cold; dry low. Imported. Listed in men's sizes.",
+      "category": "Clothing",
+      "price": 15.99,
+      "id": "7",
+      "image": "redHotChiliPeppersShirt.jpg"
+    },
+    {
+      "title": "Smiley",
+      "artist": "Nirvana",
+      "description": "Black T-shirt from Nirvana with classic smiley logo design on the front. 100% cottonWash cold; dry low. Imported. Listed in men's sizes",
+      "category": "Clothing",
+      "price": 16.99,
+      "id": "8",
+      "image": "nirvanaSmileyShirt.jpeg"
+    },
+    {
+      "title": "Hand",
+      "artist": "System Of A Down",
+      "description": "Black T-shirt from System Of A Down with a large colorful tie-dye band logo design on front. 100% cottonWash cold; dry low. Imported. Listed in men's sizes.",
+      "category": "Clothing",
+      "price": 15.99,
+      "id": "9",
+      "image": "systemOfADownHandShirt.jpg"
+    },
+    {
+      "title": "Jar Of Flies",
+      "artist": "Alice In Chains",
+      "description": "Black T-shirt from Alice In Chains with a large colorful tie-dye band logo design on front. 100% cottonWash cold; dry low. Imported. Listed in men's sizes.",
+      "category": "Clothing",
+      "price": 15.99,
+      "id": "10",
+      "image": "aliceInChainsShirt.jpg"
+    },
+    {
+      "title": "Smiley Pendant",
+      "artist": "Nirvana",
+      "description": "High quality Stainless Steel pendant. Thickness is 1.5 mm. The ball chain is Stainless Steel too. The pendant is shiny and smooth, sturdy and solid. It wouldn't darken or rust with time.",
+      "category": "Accessories",
+      "price": 15.99,
+      "id": "10",
+      "image": "nirvanaPendant.jpg"
+    },
+    {
+      "title": "Cup Coaster",
+      "artist": "Red Hot Chili Peppers",
+      "description": "The coaster model features a convenient size of: 95 mm (3.75 in) x 95 mm (3.75 in) x 4 mm (0.157 in). Perfect for all your coffee mug sizes! Our models are all designed and printed by members of our shop. We take extra care to ensure your models are created with the utmost precision.",
+      "category": "Accessories",
+      "price": 15.99,
+      "id": "10",
+      "image": "redHotChiliPeppersCoaster.jpg"
+    }
+  ]
+}
