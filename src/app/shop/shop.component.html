@@ -10,6 +10,7 @@
   <div *ngFor="let product of products | async | filters:filterByCategory" class="panel panel-default">
     <div class="panel-body">
       <h3 (click)="goToDetailPage(product)"><em>{{product.title}}</em> by {{product.artist}}</h3>
+      <!-- <img src="./../{{product.image}}" alt=""> -->
       <div *ngIf="currentRoute === '/admin'">
         <p>{{product.description}}</p>
         <p>{{product.category}}</p>
