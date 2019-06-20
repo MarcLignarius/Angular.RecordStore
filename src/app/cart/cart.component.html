@@ -3,9 +3,11 @@
   <h3><span>{{ product.artist }}</span></h3>
   <h5><span>{{ product.title }}</span></h5>
   <em><span>{{ product.description }}</span></em>
-  <p><span>{{ product.price}}</span></p>
+  <p><span>${{ product.price }}</span></p>
   <hr>
 </div>
+<h3>Order Total</h3>
+  <p><span>${{ cartService.orderTotal }}</span></p>
 <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
   <div>
     <label>Name</label>
